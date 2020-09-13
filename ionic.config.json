@@ -1,0 +1,7 @@
+{
+  "name": "wijaa_mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

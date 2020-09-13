@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <img alt="logo" id="header_logo"  float-left src="assets/images/logos/logo.png">
+  </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+
+   <div>
+
+
+    <h1 class="text_connecter"> CONNECTEZ AVEC VOTRE CELLULAIRE</h1>
+  
+    <ion-item class="input-num_tel">
+      <ion-icon name="call-sharp" slot="start"></ion-icon>
+      <ion-input placeholder="Entrez votre code"[(ngModel)]="code"></ion-input>
+    </ion-item>
+    <p class="text_definition"> Nous utilisons votre numéro de téléphone uniquement pour vous identifier.<p>
+      <ion-item class="checkbox">
+        <ion-checkbox color="primary" slot="start" [(ngModel)]="checkbox"></ion-checkbox>
+        <ion-label>Se souvenir de moi</ion-label>
+      </ion-item>
+      <ion-label>Votre code a été envoyé au (+1){{nb_phone}}</ion-label>
+
+      <section>
+        <ion-button (click) = "envoyer()" expand="block" class="button_envoyer" >ENVOYER</ion-button>
+      </section>    
+     
+    </div>
+  </ion-content>
+  
